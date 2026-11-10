@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de Agente — Triangle Agency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Ficha de Agente</h1>
+    <nav id="tabs" aria-label="Seções da ficha"></nav>
+    <div class="actions">
+      <span id="status" aria-live="polite">—</span>
+      <button type="button" id="btn-export">Exportar JSON</button>
+      <label class="btn">Importar JSON<input type="file" id="file-import" accept="application/json,.json" hidden></label>
+      <button type="button" id="btn-print">Imprimir</button>
+      <button type="button" id="btn-new" class="danger">Nova ficha</button>
+    </div>
+  </header>
+  <main id="app"></main>
+  <script src="app.js"></script>
+</body>
+</html>
